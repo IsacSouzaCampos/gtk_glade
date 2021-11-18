@@ -29,6 +29,9 @@ int main(int argc, char *argv[]) {
     button1 = GTK_WIDGET(gtk_builder_get_object(builder, "button1"));
     label1 = GTK_WIDGET(gtk_builder_get_object(builder, "label1"));
 
+    gtk_window_set_default_size(GTK_WINDOW(window), 500, 300);
+    gtk_window_set_keep_above(GTK_WINDOW(window), TRUE);
+
     gtk_widget_show(window);
 
     gtk_main();

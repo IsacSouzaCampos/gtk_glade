@@ -13,14 +13,22 @@
         <property name="can_focus">False</property>
         <child>
           <object class="GtkButton" id="button1">
-            <property name="label" translatable="yes">May I help you?</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="tooltip_text" translatable="yes">Click Me!</property>
             <property name="halign">center</property>
             <property name="valign">center</property>
+            <property name="always_show_image">True</property>
             <signal name="clicked" handler="on_button1_clicked" swapped="no"/>
+            <child>
+              <object class="GtkImage" id="floppy">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stock">gtk-floppy</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
           </object>
           <packing>
             <property name="x">143</property>
